@@ -42,13 +42,13 @@ You’ll need:
 2. Customize variables
 Edit variables.tf or pass terraform.tfvars to set things like:
 
-EC2 instance type
+- EC2 instance type
 
-AMI ID or filters
+- AMI ID or filters
 
-SSH key name
+- SSH key name
 
-Security group rules
+- Security group rules
 
 3. Initialize Terraform
 
@@ -93,11 +93,11 @@ Don’t commit .tfstate files or sensitive files — use a .gitignore like:
     *.tfvars
 
 
-Use proper IAM roles and policies rather than wide-open permissions.
+- Use proper IAM roles and policies rather than wide-open permissions.
 
-For production, restrict security group rules (e.g. avoid “0.0.0.0/0” except where absolutely necessary).
+- For production, restrict security group rules (e.g. avoid “0.0.0.0/0” except where absolutely necessary).
 
-Consider using remote state backend (S3 + DynamoDB) for state locking and security.
+- Consider using remote state backend (S3 + DynamoDB) for state locking and security.
 
 🤝 Contributing
 
